@@ -1,13 +1,12 @@
-# TradingGym
+# CryptoTGYM
 
-[![Join the chat at https://gitter.im/TradingGym/Lobby](https://badges.gitter.im/TradingGym/Lobby.svg)](https://gitter.im/TradingGym/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=plastic)](CONTRIBUTING.md)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=plastic)](https://opensource.org/licenses/Apache-2.0)
 ![completion](https://img.shields.io/badge/completion%20state-90%25-blue.svg?style=plastic)
 
-# Trading Gym (Python 3.x)
+# A cryptocurrency-focused branch of Trading Gym (Python 3.x)
 
-This is derived from https://github.com/Prediction-Machines/Trading-Gym. Since the version of [Prediction-Machines](http://prediction-machines.com/) is not actively maintaned. I started to work on some new ideas based on Python 3.
+This is derived from a Python 3.x fork of https://github.com/Prediction-Machines/Trading-Gym. Just a hobby project.
 
 Trading Gym is an open-source project for the development of reinforcement learning algorithms in the context of trading.
 
@@ -21,6 +20,10 @@ if you clone the project to local, run
 `python setup.py develop`
 
 We strongly recommend using virtual environments. A very good guide can be found at http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/.
+
+## Installation notes:
+
+`pip install` fails on Windows 7. Manual installation required. Make sure Keras is installed with Tensorflow backend before installing tgym. 
 
 ## The trading environment:
 `TickTrading`
@@ -48,17 +51,14 @@ Some examples are available in `tgym/examples/`
 To run the `dqn_agent.py` example, you will need to also install keras with `pip install keras`. By default, the backend will be set to Theano. You can also run it with Tensorflow by installing it with `pip install tensorflow`. You then need to edit `~/.keras/keras.json` and make sure `"backend": "tensorflow"` is specified.
 
 ## To Do List
-1. Python 3
-    - [x] a. print issue
-    - [x] b. module import  (need to python setup.py install/develop)
-    - [x] c. class iter issue (__next(self)__, change next(obj))
-    - [x] d. testing coverage
-2. Add more features
-    - [ ] a. pips (%)
-    - [ ] b. limit order
-    - [x] c. sl, pt, holding postion value
-    - [ ] d. on-line data feeder
-    - [ ] e. realtime feed
+
+1. Get the thing to work
+    - [ ] a. Include .csv files to run examples
+    - [ ] b. Possibly other stuff
+    
+2. Add Cryptocurrency functionality
+    - [ ] a. Support for price feed APIs
+    - [ ] b. Support for exchange trading APIs
 
 ## Reference Paper:
  1. [Human-level control through deep reinforcement
@@ -69,6 +69,3 @@ learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 Financial Portfolio Management Problem]（https://arxiv.org/pdf/1706.10059.pdf）
  
 
-## Join wechat group:
-
-<img src="./others/wechat_join.png" width="108">
