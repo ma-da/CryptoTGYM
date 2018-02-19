@@ -1,7 +1,7 @@
 # CryptoTGYM
 
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=plastic)](CONTRIBUTING.md)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=plastic)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![completion](https://img.shields.io/badge/completion%20state-75%25-blue.svg?style=plastic)
 
 # A cryptocurrency-focused branch of Trading Gym (Python 3.x)
